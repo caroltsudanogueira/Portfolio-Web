@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # O Django vem por padrão com o SQLite. Vamos dizer para ele usar o Neon:
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('postgresql://neondb_owner:npg_eqFsCuWUAi21@ep-gentle-heart-ai9oq2ws-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'),
+        default=os.getenv('DATABASE_URL'),
         conn_max_age=600,
         conn_health_checks=True,
     )
