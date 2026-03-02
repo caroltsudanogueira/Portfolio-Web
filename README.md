@@ -1,9 +1,8 @@
 # Portfolio-Web
-Código para criação e publicação de um web portfolio profissional com parte sobre o autor, seus projetos e por fim formas de contato com este. 
-🚀 Portfólio de Engenharia Biomédica - Carolina Tsuda Nogueira
+ Portfólio de Engenharia Biomédica - Carolina Tsuda Nogueira
 Este projeto é um portfólio dinâmico desenvolvido com Django e Tailwind CSS, utilizando o banco de dados Neon (PostgreSQL). 
 
-🛠️ Tecnologias Utilizadas
+Tecnologias Utilizadas
   Back-end: Python 3.12 / Django 6.0.2
   
   Banco de Dados: PostgreSQL (Hospedado no Neon)
@@ -12,12 +11,12 @@ Este projeto é um portfólio dinâmico desenvolvido com Django e Tailwind CSS, 
   
   Gestão de Dependências: python-dotenv e dj-database-url para segurança de credenciais.
 
-🏁 Como Iniciar o Projeto Localmente
+Como Iniciar o Projeto Localmente
 Siga os passos abaixo para configurar o ambiente e rodar o servidor na sua máquina:
 
 1. Clonar o Repositório
   Bash
-  git clone https://github.com/caroltsudanogueira/portfolio.git
+  git clone https://github.com/caroltsudanogueira/Portfolio-Web
   cd portfolio
 
 3. Criar e Ativar o Ambiente Virtual (Venv)
