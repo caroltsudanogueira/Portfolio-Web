@@ -1,0 +1,22 @@
+# Ambientes Virtuais (Pasta onde o Python instala as bibliotecas)
+venv/
+env/
+ENV/
+
+# Arquivos de Configuração Sensíveis (Suas senhas do Neon!)
+.env
+
+# Arquivos compilados do Python
+__pycache__/
+*.py[cod]
+
+# Banco de Dados Local (Se você usar o SQLite para testes rápidos)
+db.sqlite3
+
+# Arquivos de Mídia (Fotos dos projetos que você sobe pelo admin)
+media/
+
+# Pastas de sistema e IDEs
+.vscode/
+.idea/
+.DS_Store
