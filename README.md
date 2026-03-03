@@ -1,50 +1,57 @@
-# Portfolio-Web
- Portfólio de Engenharia Biomédica - Carolina Tsuda Nogueira
-Este projeto é um portfólio dinâmico desenvolvido com Django e Tailwind CSS, utilizando o banco de dados Neon (PostgreSQL). 
+# Portfólio de Engenharia Biomédica - Carolina
 
-Tecnologias Utilizadas
-  Back-end: Python 3.12 / Django 6.0.2
-  
-  Banco de Dados: PostgreSQL (Hospedado no Neon)
-  
-  Front-end: HTML5, CSS3 e Tailwind CSS
-  
-  Gestão de Dependências: python-dotenv e dj-database-url para segurança de credenciais.
+Este projeto é um portfólio profissional desenvolvido para apresentar projetos e competências na área de Engenharia Biomédica. A aplicação foi construída utilizando Django e está totalmente integrada a um banco de dados em nuvem.
 
-Como Iniciar o Projeto Localmente
-Siga os passos abaixo para configurar o ambiente e rodar o servidor na sua máquina:
+## URL Pública Ativa
+O projeto está em produção e pode ser acessado através do link abaixo:
+👉 **[Acesse o meu Portfólio aqui](https://portfolio-carolina-t-n.onrender.com/)** 
 
-1. Clonar o Repositório
-  Bash
-  git clone https://github.com/caroltsudanogueira/Portfolio-Web
-  cd portfolio
+---
 
-3. Criar e Ativar o Ambiente Virtual (Venv)
-  Bash
-  # No Windows
-  python -m venv venv
-  venv\Scripts\activate
+## Tecnologias Utilizadas
 
-3. Instalar as Dependências
-  Bash
-  pip install django dj-database-url python-dotenv pillow
+* **Linguagem:** Python 3.12
+* **Framework Web:** Django 6.0.2
+* **Banco de Dados:** PostgreSQL (Hospedado via **Neon.tech**)
+* **Estilização:** Tailwind CSS
+* **Servidor de Produção:** Gunicorn & Whitenoise
+* **Deploy:** Render
 
-4. Configurar as Variáveis de Ambiente
-  Crie um arquivo chamado .env na raiz do projeto e adicione as suas credenciais do banco de dados Neon e a sua Secret Key do Django:
+---
 
-Snippet de código
-  DATABASE_URL=seu_link_do_neon_aqui
-  SECRET_KEY=sua_chave_secreta_aqui
-  DEBUG=True
-  
-5. Sincronizar o Banco de Dados
-  Para criar as tabelas de Projetos, Categorias e Contatos no banco de dados, execute:
-    Bash
-    python manage.py makemigrations
-    python manage.py migrate
-    
-6. Iniciar o Servidor
-  Bash
-  python manage.py runserver
+## Arquitetura de Dados Implementada
+
+A aplicação segue uma arquitetura baseada em nuvem para garantir segurança e escalabilidade dos dados:
+
+```text
+[ Usuário/Browser ] 
+       ↕ (HTTPS)
+[ Render (PaaS) ] <--- Servidor Python com Gunicorn
+       ↕ (ORM Django)
+[ Neon (DBaaS) ] <--- Banco de Dados PostgreSQL Gerenciado
+Frontend: Interface responsiva que consome dados dinâmicos do backend.
+Backend: Lógica em Django que gerencia os modelos de projetos e o formulário de contato.
+Persistência: Dados armazenados de forma segura no Neon, utilizando variáveis de ambiente para proteção de credenciais.
+
+## Documentação de Rotas (API Interna)
+RotaMétodoDescrição/GETHome: Exibe a bio, habilidades e a galeria de projetos técnicos.
+/admin/GET/POSTPainel Administrativo: Interface para gestão de conteúdos e mensagens.
+/contato/POSTEndpoint de Contato: Processa e armazena mensagens no banco de dados.
+
+__Guia de Execução Local__
+Se desejar rodar este projeto localmente, siga os passos abaixo:
+Clonar o repositório:Bashgit clone [https://github.com/seu-usuario/portfolio.git](https://github.com/seu-usuario/portfolio.git)
+cd portfolio
+Configurar o ambiente virtual:Bashpython -m venv venv
+# No Windows:
+.\venv\Scripts\activate
+Instalar dependências:Bashpip install -r requirements.txt
+Configurar Variáveis de Ambiente:
+Crie um arquivo .env na raiz e adicione sua DATABASE_URL do Neon e a SECRET_KEY.
+Executar Migrações e Rodar:Bashpython manage.py migrate
+python manage.py runserver
 
 O portfólio estará disponível no endereço: http://127.0.0.1:8000/
+
+
+
