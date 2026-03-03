@@ -33,12 +33,12 @@ Frontend: Interface responsiva que consome dados dinâmicos do backend.
 Backend: Lógica em Django que gerencia os modelos de projetos e o formulário de contato.
 Persistência: Dados armazenados de forma segura no Neon, utilizando variáveis de ambiente para proteção de credenciais.
 
-##Documentação de Rotas (API Interna)
+## Documentação de Rotas (API Interna)
 RotaMétodoDescrição/GETHome: Exibe a bio, habilidades e a galeria de projetos técnicos.
 /admin/GET/POSTPainel Administrativo: Interface para gestão de conteúdos e mensagens.
 /contato/POSTEndpoint de Contato: Processa e armazena mensagens no banco de dados.
 
-##Guia de Execução Local
+__Guia de Execução Local__
 Se desejar rodar este projeto localmente, siga os passos abaixo:
 Clonar o repositório:Bashgit clone [https://github.com/seu-usuario/portfolio.git](https://github.com/seu-usuario/portfolio.git)
 cd portfolio
