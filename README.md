@@ -34,9 +34,9 @@ Backend: Lógica em Django que gerencia os modelos de projetos e o formulário d
 Persistência: Dados armazenados de forma segura no Neon, utilizando variáveis de ambiente para proteção de credenciais.
 
 ## Documentação de Rotas (API Interna)
-RotaMétodoDescrição/GETHome: Exibe a bio, habilidades e a galeria de projetos técnicos.
-/admin/GET/POSTPainel Administrativo: Interface para gestão de conteúdos e mensagens.
-/contato/POSTEndpoint de Contato: Processa e armazena mensagens no banco de dados.
+RotaMétodoDescrição/GET --> Home: Exibe a bio, habilidades e a galeria de projetos técnicos.
+/admin/GET/POST --> Painel Administrativo: Interface para gestão de conteúdos e mensagens.
+/contato/POST  --> Endpoint de Contato: Processa e armazena mensagens no banco de dados.
 
 __Guia de Execução Local__
 Se desejar rodar este projeto localmente, siga os passos abaixo:
